@@ -19,6 +19,8 @@
     "paths": {
       "@cmop/widgets/SugKesherNiar"   : ["src/app/widgets/SugKesherNiar/index.js"],
       "@cmop/widgets/SugKesherNiar/*" : ["src/app/widgets/SugKesherNiar/*"],
+      "@cmop/widgets/todos"           : ["src/app/widgets/todos/index.js"],
+      "@cmop/widgets/todos/*"         : ["src/app/widgets/todos/*"],
     }
   }
 }

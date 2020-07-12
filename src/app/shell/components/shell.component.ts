@@ -5,8 +5,9 @@ import { Component, OnInit } from '@angular/core';
   template: `
    <div>
       shell Works!
-      <a [routerLink]="['/682']" routerLinkActive="router-link-active">682</a> |
-      <a [routerLink]="['/']" routerLinkActive="router-link-active">home</a> 
+      <a [routerLink]="['/682']"   routerLinkActive="router-link-active">682</a> |
+      <a [routerLink]="['/']"      routerLinkActive="router-link-active">home</a> 
+      <a [routerLink]="['/todos']" routerLinkActive="router-link-active">home</a> 
       <hr>
       <router-outlet></router-outlet>
    </div>
