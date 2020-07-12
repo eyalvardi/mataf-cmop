@@ -7,13 +7,10 @@ import { Component, OnInit } from '@angular/core';
    <div>
       <h2>sug-kesher-niar Works!</h2>
       <button (click)="bl.getUsers()">Get Users</button>
+
       <hr>
-      <ul>
-        <li *ngFor="let user of bl.users">
-          <img [src]="user.picture.thumbnail" >
-          {{user.name.title}} {{ user.name.first }} {{user.name.last}}
-        </li>
-      </ul>
+      <cmop-user *ngFor="let u of bl.users" [source]="u"></cmop-user>
+     
    </div>
   `,
   styles: [`

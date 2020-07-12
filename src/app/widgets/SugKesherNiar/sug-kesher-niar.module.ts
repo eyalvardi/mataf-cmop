@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { UserComponent } from './components/user.component';
 import { SugKesherNiarComponent } from './components/sug-kesher-niar.component';
 
 @NgModule({
@@ -14,7 +15,8 @@ import { SugKesherNiarComponent } from './components/sug-kesher-niar.component';
         SugKesherNiarComponent
     ],
     declarations: [
-        SugKesherNiarComponent
+        SugKesherNiarComponent,
+        UserComponent
     ],
     providers: [],
 })
