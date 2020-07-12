@@ -1,0 +1,32 @@
+import { BL682Service } from './../services/bl_682.service';
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-sug-kesher-niar',
+  template: `
+   <div>
+      <h2>sug-kesher-niar Works!</h2>
+      <button (click)="bl.getUsers()">Get Users</button>
+      <hr>
+      <ul>
+        <li *ngFor="let user of bl.users">
+          <img [src]="user.picture.thumbnail" >
+          {{user.name.title}} {{ user.name.first }} {{user.name.last}}
+        </li>
+      </ul>
+   </div>
+  `,
+  styles: [`
+    h2{ 
+      background-color: yellow;
+    }
+  `]
+})
+export class SugKesherNiarComponent implements OnInit {
+
+  constructor(public bl : BL682Service) { }
+
+  ngOnInit() {
+  }
+
+}

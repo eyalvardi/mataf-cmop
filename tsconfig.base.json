@@ -15,6 +15,10 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@cmop/widgets/SugKesherNiar"   : ["src/app/widgets/SugKesherNiar/index.js"],
+      "@cmop/widgets/SugKesherNiar/*" : ["src/app/widgets/SugKesherNiar/*"],
+    }
   }
 }
